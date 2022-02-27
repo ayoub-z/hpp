@@ -1,0 +1,4 @@
+make.exe all -f c:\Users\ayoub\Documents\School\Lessen\Blok C\HPP (C++)\Inlevering3\ming32-make --print-data-base --no-builtin-variables --no-builtin-rules --question
+'make.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 

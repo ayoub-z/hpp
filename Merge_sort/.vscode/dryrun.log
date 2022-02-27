@@ -1,0 +1,4 @@
+make.exe -f c:\Users\ayoub\Documents\School\Lessen\Blok C\HPP (C++)\Inlevering3\ming32-make --dry-run --always-make --keep-going --print-directory
+'make.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
