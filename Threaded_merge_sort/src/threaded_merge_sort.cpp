@@ -37,10 +37,10 @@ void merge(int *haystack, int unit, int part, int start){
 
 void threaded_merge_sort(int *haystack, int num_threads, int size){
     int new_threads = num_threads;
+    thread thr[new_threads];
+    int unit = 1;    
     while(new_threads >= 1){
         int part = size / new_threads;
-        int unit = 1;
-        thread thr[new_threads];
         while (unit <= part){ // Merge as far as we're able to with threading
             int t = 0;
             // Initialize threads with their tasks
@@ -55,7 +55,7 @@ void threaded_merge_sort(int *haystack, int num_threads, int size){
             unit *= 2;
         }
         new_threads /=2;
-    }
+    } 
 }
 
 void merge_sort(int *haystack, int size){
