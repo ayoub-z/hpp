@@ -60,7 +60,8 @@ int main (int argc, char *argv[])
 
       count += checkCircuit(id, v);
    }
-
+   // source: https://www.youtube.com/watch?v=iA4uRZ8KT6o
+   // takes the (int) count on each process and summs them up into "final_count" which is used by the root process (id 0)
    MPI_Reduce(&count, &final_count, 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
 
    totalTime = MPI_Wtime() - startTime;
