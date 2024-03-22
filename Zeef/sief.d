@@ -1,0 +1,1 @@
+obj: src/sief.cpp
